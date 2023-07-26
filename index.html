@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b7c214b61e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container main">
+      <form class="form-style">
+        <input
+          type="text"
+          placeholder="☁ Seeing different weather"
+          class="search-style"
+        />
+        <input type="submit" value="Search" class="submit-style" />
+      </form>
+      <section class="weatherInfo">
+        <div class="tempInfo">
+          <h2>☀️ 34°C</h2>
+          <div>
+            <ul class="moreInfo">
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 28%</li>
+              <li>Wind: 29 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dateLocation">
+          <h1>Mashhad Current Weather</h1>
+          <ul>
+            <li>Wednesday 3:00 PM</li>
+            <li>Sunny</li>
+          </ul>
+        </div>
+      </section>
+      <img
+        src="images/weather-chart.png"
+        alt="weather-chart"
+        class="mb-5 weather-chart"
+      />
+      <section class="m-0 mb-5">
+        <ul class="row m-0 list-unstyled">
+          <li class="col row text-center li-style">
+            <div>Sun</div>
+            <div class="stiker-style">☀️</div>
+            <div>36° 21°</div>
+          </li>
+          <li class="col row text-center li-style">
+            <div>Mon</div>
+            <div class="stiker-style">☀️</div>
+            <div>34° 20°</div>
+          </li>
+          <li class="col row text-center li-style">
+            <div>Tue</div>
+            <div class="stiker-style">🌤️</div>
+            <div>33° 21°</div>
+          </li>
+          <li class="col row text-center li-style">
+            <div>wed</div>
+            <div class="stiker-style">☀️</div>
+            <div>39° 23°</div>
+          </li>
+          <li class="col row text-center li-style">
+            <div>Thu</div>
+            <div class="stiker-style">☀️</div>
+            <div>38° 22°</div>
+          </li>
+          <li class="col row text-center li-style">
+            <div>fri</div>
+            <div class="stiker-style">☀️</div>
+            <div>35° 25°</div>
+          </li>
+        </ul>
+      </section>
+      <footer class="text-center">
+        this page was coded by <b>Meena fotovvati</b>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
