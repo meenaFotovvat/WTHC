@@ -11,29 +11,24 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b7c214b61e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="main">
-      <form class="form-style" id="search">
+    <div class="container main">
+      <form class="form-style">
         <input
           type="text"
           placeholder="☁ Seeing different weather"
           class="search-style"
-          id="search-input"
         />
         <input type="submit" value="Search" class="submit-style" />
       </form>
-      <section class="weather-info">
+      <section class="weatherInfo">
         <div class="temp-info">
-          <h2>
-            <span>☀️</span>
-            <span id="temp-value">32</span
-            ><span class="deg"
-              ><span id="centigrade">°C</span>|<span id="fahrenheit"
-                >°F</span
-              ></span
-            >
-          </h2>
+          <h2>☀️ 34°C</h2>
           <div>
             <ul class="more-info">
               <li>Precipitation: 0%</li>
@@ -42,10 +37,10 @@
             </ul>
           </div>
         </div>
-        <div class="location-date">
-          <h1><span id="user-searched">Mashhad</span> Current Weather</h1>
+        <div class="date-location">
+          <h1>Mashhad Current Weather</h1>
           <ul>
-            <li id="date">Wednesday 3:00 PM</li>
+            <li>Wednesday 3:00 PM</li>
             <li>Sunny</li>
           </ul>
         </div>
@@ -53,43 +48,45 @@
       <img
         src="images/weather-chart.png"
         alt="weather-chart"
-        class="weather-chart"
+        class="mb-5 weather-chart"
       />
-      <section class="days-info">
-        <ul class="row">
-          <li class="col-2 li-style">
+      <section class="m-0 mb-5">
+        <ul class="m-0 week-temp">
+          <li class="li-style">
             <div>Sun</div>
             <div class="stiker-style">☀️</div>
             <div>36° 21°</div>
           </li>
-          <li class="col-2 li-style">
+          <li class="li-style">
             <div>Mon</div>
             <div class="stiker-style">☀️</div>
             <div>34° 20°</div>
           </li>
-          <li class="col-2 li-style">
+          <li class="li-style">
             <div>Tue</div>
             <div class="stiker-style">🌤️</div>
             <div>33° 21°</div>
           </li>
-          <li class="col-2 li-style">
+          <li class="li-style">
             <div>wed</div>
             <div class="stiker-style">☀️</div>
             <div>39° 23°</div>
           </li>
-          <li class="col-2 li-style">
+          <li class="li-style">
             <div>Thu</div>
             <div class="stiker-style">☀️</div>
             <div>38° 22°</div>
           </li>
-          <li class="col-2 li-style">
+          <li class="li-style">
             <div>fri</div>
             <div class="stiker-style">☀️</div>
             <div>35° 25°</div>
           </li>
         </ul>
       </section>
-      <footer>this page was coded by <b>Meena fotovvati</b></footer>
+      <footer>
+        this page was coded by <b>Meena fotovvati</b>
+      </footer>
     </div>
     <script src="src/script.js"></script>
   </body>

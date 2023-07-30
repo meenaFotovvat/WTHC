@@ -1,27 +1,41 @@
-h1{
-  margin-bottom: 0;
-  font-size: 20px;
-  font-weight: 500;
-  color: #7c7c7c;
+body {
+  font-family: Google Sans, Roboto, arial, sans-serif;
 }
 
-ul{
+h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h2 {
+  margin: 0;
+  font-size: 70px;
+  display: block;
+}
+
+ul {
   padding-left: 0;
+  margin: 0;
 }
 
 li {
   color: #7c7c7c;
   font-size: 16px;
   font-weight: 100;
-  height: 19px;
-  line-height: 1;
   list-style: none;
 }
+
+footer {
+  text-align: center;
+}
+
 .main {
   padding: 24px;
   border-radius: 4px;
-  margin: 48px auto;
   border: 1px solid #dee2e6;
+  max-width: 800px;
+  margin: 48px auto;
 }
 
 .form-style {
@@ -36,7 +50,7 @@ li {
   background: #f8f9fa;
   border: none;
   width: 70%;
-  padding-left: 5px;
+  padding-left: 8px;
 }
 
 .submit-style {
@@ -49,37 +63,48 @@ li {
 
 .submit-style:hover {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  cursor: pointer;
 }
 
-.weatherInfo{
+.weather-info {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
 
-.dateLocation {
-  /* width: 100%; */
-}
-
-.tempInfo{
+.temp-info {
   display: flex;
 }
 
-.moreInfo{
+.deg {
+  position: relative;
+  bottom: 34px;
+  font-size: 23px;
+}
+
+.more-info {
   margin-left: 30px;
 }
 
 .weather-chart {
   width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 30px auto;
 }
+
+/* .week-temp {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
 .li-style {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  padding: 10px 0;
+  padding: 30px;
 }
 
 .li-style:hover {
@@ -87,21 +112,30 @@ li {
   border-radius: 10px;
 }
 
-.li-style div {
-  padding: 0;
-}
-
 .stiker-style {
   font-size: 40px;
 }
 
-.icon-style {
-  font-size: 16px;
-  color: #ffbc00;
+#centigrade{
+  cursor: pointer;
+}
+
+#fahrenheit{
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .weather-chart {
     display: none;
+  }
+  .weather-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .temp-info {
+    justify-content: space-between;
+  }
+  .location-date{
+    margin-top: 30px;
   }
 }
