@@ -2,7 +2,6 @@ const apiKey = "4cb19564dd73dc91dfd4d18e353a244b";
 let unit = "metric";
 
 function displayWeatherInfo(response) {
-  console.log(response.data);
   let temp = Math.round(response.data.main.temp);
   let city = response.data.name;
   let humidity = response.data.main.humidity;
@@ -61,8 +60,6 @@ function formatDate(date) {
 function positionInfo(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
-  console.log("lat", lat);
-  console.log("lon", lon);
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`;
   axios.get(url).then(displayWeatherInfo);
 }
